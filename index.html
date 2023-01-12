@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Inofmración al navegador:se le está mandando  al navegdaro una página de html en la versión 5 -->
+<html lang="es"> <!--HTML Contiene todo el contenido y es el inicio de lo que contendrá la página - LANG lenguaje-->
+
+
+<head>
+<!--Etiquetas informativas-->
+	<title>Encriptador de Texto</title>
+	<meta charset="UTF-8"> <!-- la pasamos el idioma que usaremos al navegador para caractares especiales-->
+	<meta name="viewport" content="width=device-widht">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+</head>
+	
+	<body>
+		<!--etiquetas de contenido-->
+
+		<header>
+		<div class="caja">
+			<h1><img class="logo" src="img/vector1.png" alt="logo de encriptador de texto"></h1>
+
+		</div>
+
+	</header>
+
+	<main>
+		
+
+		<section class="seccion1">
+			<form action="">
+				<div class="bloque1">
+					<h3 class="mensajetexto">Ingrese el texto aquí</h3>
+					<textarea class="input-texto" name="name-input-texto" id="id-input-texto" cols="40" rows="10"></textarea>
+				</div>
+
+				<div class="bloque2">
+					<img class="imgsigno" src="img/signo.png" alt="signo de exclamación">
+					<p class="texto2">Sólo letras minúsculas y sin acento</p>
+				</div>
+
+
+				<div class="botones">
+					<input class="btn1" type="button" value="Encriptar" id="btn1">
+	        		<input class="btn2" type="button" value="Desencriptar" id="btn2">
+				</div>
+			</form>
+		</section>
+
+		<section class="seccion2" id="seccion2">
+			<h2 class="mensajeencriptado">Mensaje encriptado</h2>
+      		<textarea class="text-input-salida" type="text" id="msg" ></textarea>
+       		<input class="btn-copy" type="button" value="Copiar el Texto" id="btn-copy">
+		</section>
+		<section class="seccion3" id="seccion3">	
+			<div class="vector2">
+				<img src="img/muneco.png" alt="imagen de muñeco">
+			</div>
+			<div>
+				<p class="texto3">Ningún Mensaje fue encontrado</p>
+				<p class="texto4">Ingresa el texto que deseas encriptar o desencriptar</p>	
+			</div>
+	    </section>
+	</main>
+		
+		<footer>
+		
+				<p class="pie">&copyMaría Eliana Castillo Moncado </p>
+			
+		</footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/copiar-pegar.js"></script>
+		
+	</body>
+</html>
